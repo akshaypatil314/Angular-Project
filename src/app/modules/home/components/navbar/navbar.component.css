@@ -1,0 +1,29 @@
+nav {
+    height: 10vh;
+    width: 100vw;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 13px;
+}
+
+.container button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0px 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+    transition: 0.3s all ease-in-out;
+}
+
+.container button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
