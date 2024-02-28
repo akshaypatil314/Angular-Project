@@ -21,6 +21,7 @@ export class SpecificMovieComponent implements OnInit {
 
     this.fetchData.getMovieById(this.movieId).subscribe((data) => {
       this.movieDetails = data;
+      console.log(this.movieDetails)
     },
       (error) => {
         console.log(error)

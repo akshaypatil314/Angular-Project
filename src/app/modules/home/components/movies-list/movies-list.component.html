@@ -1,11 +1,10 @@
-<header>
-    <h1>Movie List</h1>
-</header>
-
-<div class="container">
-    <ul class="movie-list">
-        <li class="movie-item" *ngFor="let item of movies$ | async;">
+<div class="container-2">
+    <header>
+        <h1>Movie List</h1>
+    </header>
+    <div class="movie-div">
+        <div *ngFor="let item of movies$ | async;">
             <a routerLink={{item.id}} class="movie-link">{{item.title}}</a>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>

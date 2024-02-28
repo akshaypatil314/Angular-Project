@@ -5,7 +5,7 @@
         </div>
         <div class="flex-item-2">
             <div>
-                <h1>Create a Account</h1>
+                <h1>Create Account</h1>
                 <p>Register Here! To get All informataion about movies.</p>
             </div>
 
@@ -62,7 +62,7 @@
 <div *ngIf="isRegistered; else registerFail">
     <div class="popup" id="popup-success" [ngStyle]="dynamicStyles">
         <div class="popup-content success">
-            <span class="close" (click)="closePopup()">&times;</span>
+            <span class="close" (click)="closePopup()">ok</span>
             <h2>Registration Successful! 🎉</h2>
             <p>You can now log in to explore our movie information.</p>
         </div>
@@ -72,7 +72,7 @@
 <ng-template #registerFail>
     <div class="popup" id="popup-failure" [style.display]="dynamicStyles.display">
         <div class="popup-content failure">
-            <span class="close" (click)="closePopup()">&times;</span>
+            <span class="close" (click)="closePopup()">ok</span>
             <h2>Registration Failed! 😞</h2>
             <p>Please check your information and try again.</p>
         </div>

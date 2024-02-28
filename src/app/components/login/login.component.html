@@ -45,7 +45,7 @@
 <div *ngIf="isAuthenticated; else registerFail">
     <div class="popup" id="popup-success" [ngStyle]="dynamicStyles">
         <div class="popup-content success">
-            <span class="close" (click)="closePopup()">&times;</span>
+            <span class="close" (click)="closePopup()">ok</span>
             <h2>Login Successful! 🎉</h2>
             <p>You can now explore our movie information.</p>
         </div>
@@ -55,7 +55,7 @@
 <ng-template #registerFail>
     <div class="popup" id="popup-failure" [style.display]="dynamicStyles.display">
         <div class="popup-content failure">
-            <span class="close" (click)="closePopup()">&times;</span>
+            <span class="close" (click)="closePopup()">ok</span>
             <h2>Login Failed! 😞</h2>
             <p>Please check your information and try again.</p>
         </div>

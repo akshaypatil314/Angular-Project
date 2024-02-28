@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HomeContainerComponent } from './components/home-container/home-container.component';
 import { MoviesListComponent } from './components/movies-list/movies-list.component';
 import { SpecificMovieComponent } from './components/specific-movie/specific-movie.component';
@@ -13,7 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     NavbarComponent,
-    FooterComponent,
     HomeContainerComponent,
     MoviesListComponent,
     SpecificMovieComponent
